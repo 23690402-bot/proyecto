@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Miselánea Gonzalez Santiago</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="mic.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Miselánea Gonzalez
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienesomos.html">Nuestra Esencia</a></li>
+                            <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="ubicacion.html">Ubicación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promocion.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                    🛒 Carrito
+                    <span id="cart-counter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <img src="mic.png" alt="Logo Miselánea Gonzalez Santiago">
+        <p>"Tu tienda de confianza con productos para todos los días"</p>
+    </header>
+
+    <div class="container my-5">
+        <section>
+            <h2 class="display-5">Nuestros Productos</h2>
+            <p class="lead">Descubre la variedad de productos que tenemos para ti:</p>
+            
+            <input type="radio" id="todos" name="filtro" value="todos" checked>
+            <input type="radio" id="abarrotes" name="filtro" value="abarrotes">
+            <input type="radio" id="bebidas" name="filtro" value="bebidas">
+            <input type="radio" id="lacteos" name="filtro" value="lacteos">
+            <input type="radio" id="botanas" name="filtro" value="botanas">
+
+            <div class="filtros">
+                <label for="todos" class="filtro-btn">Todos</label>
+                <label for="abarrotes" class="filtro-btn">Abarrotes</label>
+                <label for="bebidas" class="filtro-btn">Bebidas</label>
+                <label for="lacteos" class="filtro-btn">Lácteos</label>
+                <label for="botanas" class="filtro-btn">Botanas</label>
+            </div>
+            
+            <div class="productos">
+                <div class="card abarrotes">
+                    <img src="arroz.png" alt="Arroz" class="img-thumbnail">
+                    <h3>Arroz 1kg</h3>
+                    <p class="precio">$25.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card bebidas">
+                    <img src="l2.png" alt="Refresco" class="img-thumbnail">
+                    <h3>Refresco 2.5L</h3>
+                    <p class="precio">$32.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card botanas">
+                    <img src="galletas.png" alt="Galletas" class="img-thumbnail">
+                    <h3>Galletas</h3>
+                    <p class="precio">$18.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card abarrotes">
+                    <img src="huevos.png" alt="Huevos" class="img-thumbnail">
+                    <h3>Huevos</h3>
+                    <p class="precio">$12.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card abarrotes">
+                    <img src="aceite.png" alt="Aceite" class="img-thumbnail">
+                    <h3>Aceite 1L</h3>
+                    <p class="precio">$45.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card lacteos bebidas">
+                    <img src="leche.png" alt="Leche" class="img-thumbnail">
+                    <h3>Leche 1L</h3>
+                    <p class="precio">$28.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card abarrotes">
+                    <img src="pan.png" alt="Pan de Caja" class="img-thumbnail">
+                    <h3>Pan de Caja</h3>
+                    <p class="precio">$40.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card lacteos">
+                    <img src="jamon.png" alt="Jamón" class="img-thumbnail">
+                    <h3>Jamón 250g</h3>
+                    <p class="precio">$55.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card lacteos">
+                    <img src="queso.png" alt="Queso" class="img-thumbnail">
+                    <h3>Queso Panela 200g</h3>
+                    <p class="precio">$48.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+                <div class="card abarrotes">
+                    <img src="frijoles.png" alt="Frijoles" class="img-thumbnail">
+                    <h3>Frijoles Refritos 430g</h3>
+                    <p class="precio">$15.00 MXN</p>
+                    <button class="btn-agregar btn btn-success w-100">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Miselánea Gonzalez Santiago</p>
+        <p>Calle 16 de septiembre #626, San Luis Potosí</p>
+        <p>Teléfono: 444-123-4567 | Email: contacto@elmaek.com</p>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">Tu Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="cart-items">
+          <p class="text-center">Tu carrito está vacío.</p>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top p-3">
+        <h4>Total: $<span id="cart-total">0.00</span> MXN</h4>
+        <button id="clear-cart-button" class="btn btn-danger w-100 mt-2">Vaciar Carrito</button>
+      </div>
+    </div>
+
+    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

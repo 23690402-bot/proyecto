@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - Miselánea Gonzalez Santiago</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="mic.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Miselánea Gonzalez
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Quiénes Somos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quienesomos.html">Nuestra Esencia</a></li>
+                            <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                            <li><a class="dropdown-item" href="ubicacion.html">Ubicación</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promocion.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    🛒 Carrito
+                    <span id="cart-counter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <img src="mic.png" alt="Logo Miselánea Gonzalez Santiago">
+        <p>"Tu tienda de confianza con productos para todos los días"</p>
+    </header>
+    
+    <div class="container my-5">
+        <section>
+            <h2 class="display-5">Nuestra Historia</h2>
+            <p class="lead">Desde nuestra fundación en 2010, hemos crecido junto a nuestra comunidad. Empezamos como un pequeño negocio familiar con el sueño de ofrecer un servicio cercano y productos de calidad a nuestros vecinos.</p>
+            <p>A lo largo de los años, hemos ampliado nuestra oferta y servicios, pero nuestro compromiso con los valores de honestidad y confianza sigue siendo el mismo pilar que nos sostiene día con día.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Miselánea Gonzalez Santiago</p>
+        <p>Calle 16 de septiembre #626, San Luis Potosí</p>
+        <p>Teléfono: 444-123-4567 | Email: contacto@elmaek.com</p>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Tu Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="cart-items"><p class="text-center">Tu carrito está vacío.</p></div>
+      </div>
+      <div class="offcanvas-footer border-top p-3">
+        <h4>Total: $<span id="cart-total">0.00</span> MXN</h4>
+        <button id="clear-cart-button" class="btn btn-danger w-100 mt-2">Vaciar Carrito</button>
+      </div>
+    </div>
+
+    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
