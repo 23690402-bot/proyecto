@@ -63,43 +63,47 @@
         <section>
             <div class="text-center">
                 <h2 class="display-5">Promociones de la Semana</h2>
-                <p class="lead">¡Aprovecha nuestras ofertas especiales! Haz clic para ver los detalles.</p>
+                <p class="lead">¡Aprovecha nuestras ofertas especiales! Ahora puedes añadirlas directamente al carrito.</p>
             </div>
 
             <div class="promociones mt-4">
-                <div class="promo-card">
+                <div class="card promo-card">
                     <img src="arroz.png" alt="Arroz 1kg" class="img-thumbnail">
                     <h3>Arroz 1kg</h3>
-                    <p>Precio regular: $25.00</p>
+                    <p>Precio regular: <del>$25.00</del></p>
                     <p class="descuento">Oferta: $20.00</p>
-                    <button type="button" class="btn btn-info btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#promoArrozModal">
+                    <p class="precio" style="display: none;">$20.00 MXN</p> <button class="btn-agregar btn btn-success w-100 mt-2">Añadir al carrito</button>
+                    <button type="button" class="btn btn-info btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#promoArrozModal">
                         Ver detalles
                     </button>
                 </div>
-                <div class="promo-card">
+                <div class="card promo-card">
                     <img src="l2.png" alt="Refresco 2.5L" class="img-thumbnail">
                     <h3>Refresco 2.5L</h3>
-                    <p>Precio regular: $32.00</p>
+                    <p>Precio regular: <del>$32.00</del></p>
                     <p class="descuento">Oferta: $28.00</p>
-                    <button type="button" class="btn btn-info btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#promoRefrescoModal">
+                    <p class="precio" style="display: none;">$28.00 MXN</p> <button class="btn-agregar btn btn-success w-100 mt-2">Añadir al carrito</button>
+                    <button type="button" class="btn btn-info btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#promoRefrescoModal">
                         Ver detalles
                     </button>
                 </div>
-                <div class="promo-card">
+                <div class="card promo-card">
                     <img src="galletas.png" alt="Galletas" class="img-thumbnail">
                     <h3>Galletas</h3>
-                    <p>Precio regular: $18.00</p>
+                    <p>Precio regular: <del>$18.00</del></p>
                     <p class="descuento">Oferta: $15.00</p>
-                    <button type="button" class="btn btn-info btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#promoGalletasModal">
+                    <p class="precio" style="display: none;">$15.00 MXN</p> <button class="btn-agregar btn btn-success w-100 mt-2">Añadir al carrito</button>
+                    <button type="button" class="btn btn-info btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#promoGalletasModal">
                         Ver detalles
                     </button>
                 </div>
-                <div class="promo-card">
+                <div class="card promo-card">
                     <img src="huevos.png" alt="Huevos" class="img-thumbnail">
                     <h3>Huevos</h3>
-                    <p>Precio regular: $12.00</p>
+                    <p>Precio regular: <del>$12.00</del></p>
                     <p class="descuento">Oferta: $10.00</p>
-                     <button type="button" class="btn btn-info btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#promoHuevosModal">
+                    <p class="precio" style="display: none;">$10.00 MXN</p> <button class="btn-agregar btn btn-success w-100 mt-2">Añadir al carrito</button>
+                     <button type="button" class="btn btn-info btn-sm w-100 mt-2" data-bs-toggle="modal" data-bs-target="#promoHuevosModal">
                         Ver detalles
                     </button>
                 </div>
@@ -113,86 +117,10 @@
         <p>Teléfono: 444-123-4567 | Email: contacto@elmaek.com</p>
     </footer>
 
-    <div class="modal fade" id="promoArrozModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5">Promoción: Arroz 1kg</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <img src="arroz.png" class="img-fluid rounded mb-3" alt="Arroz">
-            <p>Aprovecha nuestra increíble oferta en el arroz de 1kg. ¡Perfecto para tus comidas diarias!</p>
-            <p><strong>Precio regular:</strong> <del>$25.00</del></p>
-            <p class="h4"><strong>Precio de oferta: $20.00</strong></p>
-            <small class="text-muted">Válido hasta agotar existencias.</small>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="promoRefrescoModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5">Promoción: Refresco 2.5L</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            <img src="l2.png" class="img-fluid rounded mb-3" alt="Refresco">
-            <p>Refréscate con tu familia. Lleva el refresco de 2.5L a un precio especial.</p>
-            <p><strong>Precio regular:</strong> <del>$32.00</del></p>
-            <p class="h4"><strong>Precio de oferta: $28.00</strong></p>
-            <small class="text-muted">Válido hasta agotar existencias.</small>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="promoGalletasModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">Promoción: Galletas</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="galletas.png" class="img-fluid rounded mb-3" alt="Galletas">
-                    <p>El antojo perfecto para cualquier momento del día. ¡No te quedes sin las tuyas!</p>
-                    <p><strong>Precio regular:</strong> <del>$18.00</del></p>
-                    <p class="h4"><strong>Precio de oferta: $15.00</strong></p>
-                    <small class="text-muted">Válido hasta agotar existencias.</small>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="promoHuevosModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">Promoción: Huevos</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="huevos.png" class="img-fluid rounded mb-3" alt="Huevos">
-                    <p>Un básico en tu cocina a un precio que no puedes dejar pasar.</p>
-                    <p><strong>Precio regular:</strong> <del>$12.00</del></p>
-                    <p class="h4"><strong>Precio de oferta: $10.00</strong></p>
-                    <small class="text-muted">Válido hasta agotar existencias.</small>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="promoArrozModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5">Promoción: Arroz 1kg</h1><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="arroz.png" class="img-fluid rounded mb-3" alt="Arroz"><p>Aprovecha nuestra increíble oferta en el arroz de 1kg. ¡Perfecto para tus comidas diarias!</p><p><strong>Precio regular:</strong> <del>$25.00</del></p><p class="h4"><strong>Precio de oferta: $20.00</strong></p><small class="text-muted">Válido hasta agotar existencias.</small></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div>
+    <div class="modal fade" id="promoRefrescoModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5">Promoción: Refresco 2.5L</h1><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="l2.png" class="img-fluid rounded mb-3" alt="Refresco"><p>Refréscate con tu familia. Lleva el refresco de 2.5L a un precio especial.</p><p><strong>Precio regular:</strong> <del>$32.00</del></p><p class="h4"><strong>Precio de oferta: $28.00</strong></p><small class="text-muted">Válido hasta agotar existencias.</small></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div>
+    <div class="modal fade" id="promoGalletasModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5">Promoción: Galletas</h1><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="galletas.png" class="img-fluid rounded mb-3" alt="Galletas"><p>El antojo perfecto para cualquier momento del día. ¡No te quedes sin las tuyas!</p><p><strong>Precio regular:</strong> <del>$18.00</del></p><p class="h4"><strong>Precio de oferta: $15.00</strong></p><small class="text-muted">Válido hasta agotar existencias.</small></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div>
+    <div class="modal fade" id="promoHuevosModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5">Promoción: Huevos</h1><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="huevos.png" class="img-fluid rounded mb-3" alt="Huevos"><p>Un básico en tu cocina a un precio que no puedes dejar pasar.</p><p><strong>Precio regular:</strong> <del>$12.00</del></p><p class="h4"><strong>Precio de oferta: $10.00</strong></p><small class="text-muted">Válido hasta agotar existencias.</small></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
       <div class="offcanvas-header">
